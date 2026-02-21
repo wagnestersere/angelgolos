@@ -4,7 +4,7 @@ import logging
 from pickle import TRUE
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
-from decouple import config
+from decorator import config
 
 from filter import IsAdminFilter
 
@@ -60,4 +60,5 @@ if __name__ == "_main_":
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
